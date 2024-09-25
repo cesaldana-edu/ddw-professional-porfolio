@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DDW - Portfolio Profesional</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <a class="logo" href="index.html">
+            <img src="img/logo.png" alt="Grupo 2 Logo">
+        </a>
+        <nav>
+            <ul>   
+                <li><a href="index.html">Inicio</a></li>
+                <li class="active"><a href="sobremi.html">Sobre Mí</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="habilidades.html">Habilidades</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="nav-icon">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <div class="left">
+                <h5 class="pre-title red">SOBRE Mí</h5>
+                <h1 class="title">Una década de experiencia en el Marketing Digital.</h1> 
+                <p class="description">Me gradué de la Lic. en Comercialización (Marketing) de la UAI en 2012. Desde entonces, he trabajado en diversas empresas, desde startups hasta corporaciones multinacionales, desarrollando y ejecutando estrategias de marketing que han impulsado el crecimiento y la visibilidad de las marcas. Mi enfoque está en el marketing digital y la gestión de proyectos.</p><br/>
+            </div>
+            <div class="right">
+                <div class="articles-container">
+                    <h2 class="subtitle">Como profesional de marketing digital, mi filosofía de trabajo se centra en la innovación, la adaptabilidad y el compromiso con los resultados.</h2> 
+                    <article>
+                        <h2><span class="article-number light-brown">01. </span> Innovación Constante</h2>
+                        <p class="article-description">
+                            En un entorno digital en constante evolución, me esfuerzo por estar siempre a la vanguardia de las tendencias y tecnologías emergentes. Esto me permite ofrecer soluciones creativas y efectivas que destacan en un mercado competitivo.
+                        </p>
+                    </article>
+    
+                    <article>
+                        <h2><span class="article-number light-brown">02. </span> Adaptabilidad</h2>
+                        <p class="article-description">
+                            Cada cliente y proyecto es único, por lo que adapto mis estrategias para satisfacer las necesidades específicas de cada uno. Mi enfoque flexible me permite responder rápidamente a los cambios del mercado y optimizar continuamente las campañas para maximizar su impacto.                    </p>
+                    </article>
+    
+                    <article>
+                        <h2><span class="article-number light-brown">03. </span> Ética y Transparencia</h2>
+                        <p class="article-description">
+                            Valoro la integridad y la honestidad en todas mis interacciones profesionales. Mantengo una comunicación abierta y transparente con mis clientes, asegurando que estén informados y satisfechos con cada paso del proceso.                    </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <img class="logo-uade" src="img/logo-uade.png"/>
+        <div class="rights-text">
+            <p>Copyright © 2024 Grupo2 - Todos los derechos reservados</p>
+            <p>Sitio desarrollado como práctica para la materia materia Diseño y Desarrollo Web.</p>
+        </div>
+        <div class="social">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+              </svg>
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-youtube"></i>
+            <i class="bi bi-linkedin"></i>
+        </div>
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector(".nav-icon");
+        const navMenu = document.querySelector("nav ul");
+
+        hamburger.addEventListener("click", mobileMenu);
+
+        function mobileMenu() {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        }
+
+        const navLink = document.querySelectorAll("nav ul li a");
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+        function closeMenu() {
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("active");
+        }
+    </script>
+</body>
+</html>

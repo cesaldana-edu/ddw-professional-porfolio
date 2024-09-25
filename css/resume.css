@@ -1,0 +1,10 @@
+body { font-size: 1.1em; line-height: 1.8em;}
+article:not(.subitem) { margin: 3em 0; }
+article.subitem { margin: 1em 0; }
+ul { padding: 1em; }
+.contact-info-container { margin: 1em auto;}
+.contact-info-container p { margin: 1em auto;}
+
+@media only screen and (min-width: 992px) {
+    article:not(.subitem) {  width: 100%; margin: 1em 0; }
+}

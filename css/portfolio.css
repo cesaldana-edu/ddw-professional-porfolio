@@ -1,0 +1,21 @@
+.img-container {
+    border: 1px solid #ddd;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+@media only screen and (min-width: 992px) {
+    .img-container { height: 9em; }
+    .article-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        align-content: stretch;
+        margin: 0 auto;
+    }
+    .article-description { margin-left: 2em; }
+    .article-description p { margin-bottom: 1em;}
+    .img-container { height: 7.5    em; }
+}

@@ -1,0 +1,25 @@
+.articles-container { padding: 0 8em 0 8em;}
+.skill-bar {
+    width: 100%;
+    background-color: #f3f3f3;
+    border-radius: 5px;
+    margin: 1em 0;
+    border: 1px solid lightgray;
+}
+
+.skill-level {
+    height: 20px;
+    border-radius: 5px;
+    text-align: right;
+    padding-right: 5px;
+    color: white;
+    line-height: 20px;
+}
+
+.high { width: 90%; background-color: #4caf50; }
+
+.medium-high { width: 75%; background-color: #2196f3; }
+
+.medium { width: 60%; background-color: #ff9800; }
+
+.low { width: 40%; background-color: #f44336; }

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DDW - Portfolio Profesional</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/servicios.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+    <header>
+        <a class="logo" href="index.html">
+            <img src="img/logo.png" alt="Grupo 2 Logo">
+        </a>
+        <nav>
+            <ul>   
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="sobremi.html">Sobre Mí</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="habilidades.html">Habilidades</a></li>
+                <li class="active"><a href="servicios.html">Servicios</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="nav-icon">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <div class="left">
+                <h5 class="pre-title red">Nuestros Servicios</h5>
+                <h1 class="title">Estrategias de marketing que generen un impacto positivo y duradero en tus clientes.</h1> 
+                <p class="description">
+                    Si estás buscando mejorar tu presencia en el mercado, aumentar tus ventas o simplemente necesitas asesoramiento sobre cómo llevar tu negocio al siguiente nivel, estás en el lugar correcto.                </p>
+            </div>
+            <div class="right">
+                <div class="articles-container">
+
+                    <article class="txt-justified">
+                        <div class="article-header">
+                            <span class="material-symbols-outlined">monitoring</span>
+                            <h2>Marketing Digital</h2>
+                        </div>
+                        <div class="article-description">
+                            <p>Desde la creación de contenido hasta la optimización de motores de búsqueda, te ayudo a conectar con tu audiencia y a impulsar tu marca.</p>
+                        </div>
+                    </article>
+
+                    <article class="txt-justified">
+                        <div class="article-header">
+                            <span class="material-symbols-outlined">query_stats</span>
+                            <h2>SEO</h2>
+                        </div>
+                        <div class="article-description">
+                            Mejora tu posicionamiento en los motores de búsqueda y atrae más tráfico orgánico.
+                        </div>
+                    </article>
+                    
+                    <article class="txt-justified">
+                        <div class="article-header">
+                            <span class="material-symbols-outlined">campaign</span>
+                            <h2>Marketing de Contenidos</h2>
+                        </div>
+                        <div class="article-description">
+                            Desarrollamos y distribuimos contenido que no solo informa, sino que también inspira y convierte, fortaleciendo la lealtad a tu marca.
+                        </div>
+                    </article>
+
+                    <article class="txt-justified">
+                        <div class="article-header">
+                            <span class="material-symbols-outlined">analytics</span>
+                            <h2>Análisis de Datos</h2>
+                        </div>
+                        <div class="article-description">
+                            Te proporcionamos insights  sobre el comportamiento de tus usuarios y el rendimiento de tus campañas.
+                        </div>
+                    </article>
+                    
+                </div>
+            </div>
+        </section>
+        <section class="bg-light-green">
+            <h1>Que dicen mis clientes</h1>
+            <div class="clients-container">
+                <article>
+                    <div class="image-cropper">
+                        <img class="profile-pic" src="img/client-1.png" alt="Santiago Benavidez">
+                    </div>
+                    <div class="quote">
+                        “Trabajar con CS ha sido una experiencia transformadora para nuestra empresa. Su estrategia de marketing digital no solo aumentó nuestra visibilidad en redes sociales, sino que también mejoró significativamente nuestra imagen de marca. Gracias a sus campañas creativas, hemos visto un incremento del 40% en el engagement y un crecimiento del 25% en nuestros seguidores.”
+                    </div>
+                    <div class="client-name">Santiago Benavidez, CEO de Finatech</div>
+                </article>
+                <article>
+                    <div class="image-cropper">
+                        <img class="profile-pic" src="img/client-2.png" alt="Santiago Benavidez">
+                    </div>
+                    <div class="quote">
+                        “Desde que comenzamos a colaborar con CS, nuestra presencia en redes sociales ha mejorado drásticamente. Ella implementó una estrategia de contenido que resonó con nuestra audiencia y aumentó nuestras ventas en un 30%. Su habilidad para entender y conectar con nuestro público objetivo es impresionante.”                </div>
+                    <div class="client-name">Isable Acuña, Fundadora de ClickShop</div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <img class="logo-uade" src="img/logo-uade.png"/>
+        <div class="rights-text">
+            <p>Copyright © 2024 Grupo2 - Todos los derechos reservados</p>
+            <p>Sitio desarrollado como práctica para la materia materia Diseño y Desarrollo Web.</p>
+        </div>
+        <div class="social">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+              </svg>
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-youtube"></i>
+            <i class="bi bi-linkedin"></i>
+        </div>
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector(".nav-icon");
+        const navMenu = document.querySelector("nav ul");
+
+        hamburger.addEventListener("click", mobileMenu);
+
+        function mobileMenu() {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        }
+
+        const navLink = document.querySelectorAll("nav ul li a");
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+        function closeMenu() {
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("active");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DDW - Portfolio Profesional</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+</head>
+
+<body>
+    <header>
+        <a class="logo" href="index.html">
+            <img src="img/logo.png" alt="Grupo 2 Logo">
+        </a>
+        <nav>
+            <ul>   
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="sobremi.html">Sobre Mí</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li class="active"><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="habilidades.html">Habilidades</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="nav-icon">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <div class="left">
+                <h5 class="pre-title red">Portfolio</h5>
+                <h1 class="title">Orgullosa de impulsar marcas con estrategias digitales innovadoras y efectivas.</h1> 
+            </div>
+            <div class="right">
+                <div class="articles-container">
+                    <article id="job-2" class="txt-justified article-flex">
+                        <h2>Campaña de SEO para E-commerce</h2>
+                        <div class="article-content">
+                            <div class="img-container"><img src="img/logo-clickshop.png" alt="ClickShop Logo"/></div>
+                        <div class="article-description">
+                            <p>Optimización de un sitio web de comercio electrónico para mejorar su posicionamiento en motores de búsqueda. Incrementó el tráfico orgánico en un 50% en seis meses.</p>
+                            <div class="txt-small"><b>Herramientas:</b> Google Analytics, SEMrush, Ahrefs.</div>
+                            <div class="txt-small"><b>Rol:</b> Especialista en SEO.</div>
+                        </div>
+                        </div>
+                    </article>
+    
+                    <article id="job-1" class="txt-justified article-flex">
+                        <h2>Gestión de Redes Sociales para una Marca de Moda</h2>
+                        <div class="article-content">
+                            <div class="img-container"><img src="img/logo-ziara.png" alt="Ziara Logo"></div>
+                            <div class="article-description">
+                                <p>Creación y gestión de contenido para las redes sociales de una marca de moda. Aumentó el engagement en un 70% y crecimiento de seguidores en un 40%.</p>
+                                <div class="txt-small"><b>Herramientas:</b> Hootsuite, Canva, Facebook Insights.</div>
+                                <div class="txt-small"><b>Rol:</b> Community Manager.</div>
+                            </div>
+                        </div>
+                    </article>
+    
+                    <article id="jobs" class="txt-justified article-flex">
+                        <h2>Campaña de Email Marketing para una Startup Tecnológica</h2>
+                        <div class="article-content">
+                            <div class="img-container"><img src="img/logo-fintech.png" alt="Fintech"/></div>
+                            <div class="article-description">
+                                <p>Desarrollo de una estrategia de email marketing para una startup en el sector tecnológico. Tasa de apertura del 25% y tasa de conversión del 10%.</p>
+                                <div class="txt-small"><b>Herramientas:</b> Mailchimp, HubSpot.</div>
+                                <div class="txt-small"><b>Rol:</b> Especialista en Email Marketing.</div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <img class="logo-uade" src="img/logo-uade.png"/>
+        <div class="rights-text">
+            <p>Copyright © 2024 Grupo2 - Todos los derechos reservados</p>
+            <p>Sitio desarrollado como práctica para la materia materia Diseño y Desarrollo Web.</p>
+        </div>
+        <div class="social">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+              </svg>
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-youtube"></i>
+            <i class="bi bi-linkedin"></i>
+        </div>
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector(".nav-icon");
+        const navMenu = document.querySelector("nav ul");
+
+        hamburger.addEventListener("click", mobileMenu);
+
+        function mobileMenu() {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        }
+
+        const navLink = document.querySelectorAll("nav ul li a");
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+        function closeMenu() {
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("active");
+        }
+    </script>
+</body>
+</html>
